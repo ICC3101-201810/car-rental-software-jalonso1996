@@ -8,41 +8,20 @@ namespace ConsoleApp1
 {
     public class Arriendo
     {
-        List<Cliente> clientes;
-        List<Sucursal> sucursales;
-        List<Vehiculo> vehiculos;
+        Cliente cliente;
+        Sucursal sucursal;
+        Vehiculo vehiculo;
         List<Accesorio> accsesorios;
-        List<List<Accesorio>> listaaccesorio;
 
-        public Arriendo(List<Cliente> miClientes, List<Sucursal> miSucursales, List<Vehiculo> miVehiculos, List<Accesorio> miAccesorios, List<List<Accesorio>> miListaDA)
+        public Arriendo(Cliente miClientes, Sucursal miSucursales, Vehiculo miVehiculos, List<Accesorio> miAccesorios)
         {
-            clientes = miClientes;
-            sucursales = miSucursales;
-            vehiculos = miVehiculos;
+            cliente = miClientes;
+            sucursal = miSucursales;
+            vehiculo = miVehiculos;
             accsesorios = miAccesorios;
-            listaaccesorio = miListaDA;
+            
         }
 
-        public void AgregarCliente(Cliente cliente1)
-        {
-            clientes.Add(cliente1);
-        }
-        public void AgregarSucursal(Sucursal sucursal1)
-        {
-            sucursales.Add(sucursal1);
-        }
-        public void AgregarVehiculo(Vehiculo vehiculo1)
-        {
-            vehiculos.Add(vehiculo1);
-        }
-        public void AgregarAccesorio(Accesorio accesorio1)
-        {
-            accsesorios.Add(accesorio1);
-        }
-        public void AgregarAccesorios(List<Accesorio> accesorios)
-        {
-            listaaccesorio.Add(accsesorios);
-        }
 
     }
 }

@@ -39,5 +39,10 @@ namespace ConsoleApp1
                 return false;
             }
         }
+        string l;
+        public void AgregarLicencia()
+        {
+            licencia.Add(l);
+        }
     }
 }

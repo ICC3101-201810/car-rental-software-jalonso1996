@@ -10,11 +10,13 @@ namespace ConsoleApp1
     {
         string nombre;
         string direccion;
+        List<Vehiculo> listavehiculos;
 
-        public Sucursal(string miNombre, string miDireccion)
+        public Sucursal(string miNombre, string miDireccion,List<Vehiculo> miListavehiculos)
         {
             nombre = miNombre;
             direccion = miDireccion;
+            listavehiculos = miListavehiculos;
         }
     }
 }
